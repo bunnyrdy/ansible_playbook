@@ -1,8 +1,11 @@
 - name: variables
   hosts: localhost
-  vars:  # variable declaration
+  gather_facts: false
+
+  vars:
     course: "terraform"
     from: "Learn devops"
+
   tasks:
     - name: print information
       ansible.builtin.debug:
