@@ -1,7 +1,7 @@
  - name: variables
    hosts: localhost
    vars: #varible declaration
-     course: "Ansible"
+     Course: "terraform"
      from: "Learn devops"
    tasks:
    - name: print information
