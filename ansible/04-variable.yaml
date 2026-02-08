@@ -1,12 +1,11 @@
 - name: variables
   hosts: localhost
-  gather_facts: false
-
-  vars:
-    course: "terraform"
-    from: "Learn devops"
-
+  # vars:
+  #   course: "terraform"
+  #   from: "Learn devops"
   tasks:
     - name: print information
+      vars:
+        course: "terraform"
       ansible.builtin.debug:
         msg: "hi, we are learning {{ course }} from {{ from }}"
