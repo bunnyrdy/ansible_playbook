@@ -1,0 +1,9 @@
+ - name: variables
+   hosts: localhost
+   vars: #varible declaration
+    course: "Ansible"
+    from: "Learn devops"
+   tasks:
+   - name: print information
+     asnible.builtin.debug:
+     msg: "hi, we are learning {{course}} from {{from}}"
