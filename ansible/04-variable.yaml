@@ -5,18 +5,18 @@
   #   from: "Learn devops"
   # vars_files:
   # - vars-files.yaml
-  vars_prompt:
-  - name: USERNAME
-    prompt: please enter your USERNAME
-    private: false
-  - name: PASSWORD
-    prompt: please enter your PASSWORD
-    private: true
+  # vars_prompt:
+  # - name: USERNAME
+  #   prompt: please enter your USERNAME
+  #   private: false
+  # - name: PASSWORD
+  #   prompt: please enter your PASSWORD
+  #   private: true
 
   tasks:
     - name: print information
       # vars:
       #   course: "terraform"
       ansible.builtin.debug:
-        # msg: "hi, i am {{name}} i am working as {{Designation}} in {{company}}"
-        msg: "hi, username:{{USERNAME}}. password is: {{PASSWORD}}"
+        msg: "hi, i am {{name}} i am working as {{Designation}} in {{company}}"
+        # msg: "hi, username:{{USERNAME}}. password is: {{PASSWORD}}"
