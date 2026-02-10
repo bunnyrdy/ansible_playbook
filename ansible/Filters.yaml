@@ -1,6 +1,6 @@
-- name: defult value
+- name: default value
   hosts: localhost
   tasks:
-    - name: print defult value
+    - name: print default value
       ansible.builtin.debug:
-        msg: "hello {{username | defult('srinivasreddy') }}"
+        msg: "hello {{username | default('srinivasreddy') }}"
